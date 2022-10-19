@@ -1,0 +1,56 @@
+﻿
+@model IEnumerable<Event>
+@{
+    ViewData["Title"] = "InvitedTo";
+}
+
+<h1>InvitedTo</h1>
+
+
+
+
+<table class="table" style="background-color:antiquewhite ; padding:15px; border:15px; border-color:saddlebrown; border-radius:15px; opacity:0.85">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Location)
+            </th>
+
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Location)
+                </td>
+                <td>
+
+                    <a class="btn-block" asp-action="Details" asp-route-id="@item.Title" style=" text-align: center; background-color: aquamarine; text-decoration-style: solid">Details</a>
+
+                </td>
+
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+

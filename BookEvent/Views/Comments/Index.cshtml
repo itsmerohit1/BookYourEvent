@@ -1,0 +1,37 @@
+﻿@model IEnumerable<BookEvent.Models.Comment>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div style="background-color:antiquewhite ; padding:15px; border:15px; border-color:saddlebrown; border-radius:15px; opacity:0.85">
+
+
+    <p>
+        <a asp-action="Create">Add new Comments</a>
+    </p>
+    <table class="table">
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CommentAdded)
+                        <p style="margin-left:20px">
+                            by
+                            @Html.DisplayFor(modelItem => item.EmailId)
+                            on
+                            @Html.DisplayFor(modelItem => item.Date)
+                        </p>
+                    </td>
+
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.CommentAdded">Edit</a> |
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    </div>

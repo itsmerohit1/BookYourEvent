@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BookEvent</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+  
+</head>
+<body style="background-image: url(https://images5.alphacoders.com/421/421124.jpg) ;height:100%;width:100%">
+
+    <header style="background-color:antiquewhite; color:firebrick">
+        <nav style=" position: sticky;   text-decoration-style: solid; color: brown" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"  >
+            <div class="container" >
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><h4>Home</h4> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Events" asp-action="PublicEvents"><h5 style="color:saddlebrown">Public Events</h5> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Events" asp-action="PastEvents"><h5 style="color:saddlebrown">Past Events</h5></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Events" asp-action="UpcomingEvents"><h5 style="color:saddlebrown">Upcoming Events</h5></a>
+                        </li>
+
+                        @if (Shared.CurrUser.currUser != null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Events" asp-action="Index"> <h5 style="color:saddlebrown">My Events</h5></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Events" asp-action="Create"><h5 style="color:saddlebrown">Create Events</h5> </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="LoginUsers" asp-action="Logout"><h5  style="color:black">Log Out</h5></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Events" asp-action="invitedTo"><h5 style="color:saddlebrown">Invited to</h5>
+                                </a>
+                            </li>
+                        }
+                        else
+                        {
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="LoginUsers" asp-action="Login"><h5 style="color:black">Login</h5></a>
+                            </li>
+                            <li class="nav-item">
+
+                                <a class="nav-link text-dark" asp-area="" asp-controller="RegisterUsers" asp-action="Register"><h5 style="color:black">Register</h5></a>
+                            </li>
+                        }
+
+
+                        <li class="nav-item">  <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Support"><h4 style="color:blue">Support</h4></a>  </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container" style="background-color:antiquewhite">
+            &copy; 2022 - BookEvent - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,28 @@
+C:\Users\rohitanand\source\repos\BookEvent\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.exe
+C:\Users\rohitanand\source\repos\BookEvent\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.deps.json
+C:\Users\rohitanand\source\repos\BookEvent\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.runtimeconfig.json
+C:\Users\rohitanand\source\repos\BookEvent\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.runtimeconfig.dev.json
+C:\Users\rohitanand\source\repos\BookEvent\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.dll
+C:\Users\rohitanand\source\repos\BookEvent\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.pdb
+C:\Users\rohitanand\source\repos\BookEvent\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\rohitanand\source\repos\BookEvent\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rohitanand\source\repos\BookEvent\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\rohitanand\source\repos\BookEvent\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.AssemblyInfo.cs
+C:\Users\rohitanand\source\repos\BookEvent\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\rohitanand\source\repos\BookEvent\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.dll
+C:\Users\rohitanand\source\repos\BookEvent\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.pdb
+C:\Users\rohitanand\source\repos\BookEvent\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.genruntimeconfig.cache
+C:\Users\rohitanand\source\repos\BookEvent - Copy\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.exe
+C:\Users\rohitanand\source\repos\BookEvent - Copy\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.deps.json
+C:\Users\rohitanand\source\repos\BookEvent - Copy\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.runtimeconfig.json
+C:\Users\rohitanand\source\repos\BookEvent - Copy\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.runtimeconfig.dev.json
+C:\Users\rohitanand\source\repos\BookEvent - Copy\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.dll
+C:\Users\rohitanand\source\repos\BookEvent - Copy\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.pdb
+C:\Users\rohitanand\source\repos\BookEvent - Copy\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\rohitanand\source\repos\BookEvent - Copy\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rohitanand\source\repos\BookEvent - Copy\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\rohitanand\source\repos\BookEvent - Copy\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.AssemblyInfo.cs
+C:\Users\rohitanand\source\repos\BookEvent - Copy\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\rohitanand\source\repos\BookEvent - Copy\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.dll
+C:\Users\rohitanand\source\repos\BookEvent - Copy\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.pdb
+C:\Users\rohitanand\source\repos\BookEvent - Copy\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.genruntimeconfig.cache

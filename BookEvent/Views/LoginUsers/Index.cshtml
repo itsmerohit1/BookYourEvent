@@ -1,0 +1,44 @@
+﻿@model IEnumerable<BookEvent.Models.LoginUser>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div style="background-color:antiquewhite ; padding:15px; border:15px; border-color:saddlebrown; border-radius:15px; opacity:0.85">
+
+    <h1>Index</h1>
+
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.EmailId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Password)
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmailId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Password)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.EmailId">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.EmailId">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.EmailId">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+   </div>

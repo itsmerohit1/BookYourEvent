@@ -1,0 +1,87 @@
+﻿@model BookEvent.Models.Event
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div style="background-color:antiquewhite ; padding:15px; border:15px; border-color:saddlebrown; border-radius:15px; opacity:0.85">
+
+
+    <h4>Events</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Title" class="control-label"></label>
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Date" class="control-label"></label>
+                    <input asp-for="Date" class="form-control" />
+                    <span asp-validation-for="Date" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Location" class="control-label"></label>
+                    <input asp-for="Location" class="form-control" />
+                    <span asp-validation-for="Location" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="StartTime" class="control-label"></label>
+                    <input asp-for="StartTime" class="form-control" />
+                    <span asp-validation-for="StartTime" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Duration" class="control-label"></label>
+                    <input asp-for="Duration" class="form-control" />
+                    <span asp-validation-for="Duration" class="text-danger"></span>
+                </div>
+
+
+                <div class="form-group">
+
+                    <label asp-for="Type" class="control-label"></label>
+
+                    <br />  <input asp-for="Type" type="radio" value="PRIVATE" />Private<br />
+
+                    <input asp-for="Type" type="radio" value="PUBLIC" />Public<br />
+
+
+                    <span asp-validation-for="Type" class="text-danger"></span>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label"></label>
+                    <input asp-for="Description" class="form-control" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="OtherDetails" class="control-label"></label>
+                    <input asp-for="OtherDetails" class="form-control" />
+                    <span asp-validation-for="OtherDetails" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="InviteByEmail" class="control-label"></label>
+                    <input asp-for="InviteByEmail" class="form-control" />
+                    <span asp-validation-for="InviteByEmail" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-controller="home" asp-action="Index">Back to HomePage</a>
+    </div>
+    </div>
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }

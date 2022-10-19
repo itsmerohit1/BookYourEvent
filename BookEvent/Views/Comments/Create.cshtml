@@ -1,0 +1,33 @@
+﻿@model BookEvent.Models.Comment
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div style="background-color:antiquewhite ; padding:15px; border:15px; border-color:saddlebrown; border-radius:15px; opacity:0.85">
+
+
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="CommentAdded" class="control-label"></label>
+                    <input asp-for="CommentAdded" class="form-control" />
+                    <span asp-validation-for="CommentAdded" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Post" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <div>
+
+    </div>
+    </div>
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
